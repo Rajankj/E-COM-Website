@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>RKJ E-Commerce</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo>">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> 
+            </div>
+
+        </div>
+        <section id="contact">
+            
+            <h1 class="section-heading mb50px">
+            <span>
+                <i class="far fa-address-card con1"></i>
+            </span>
+            <span class="con"> Contact </span>
+         </h1>
+         <div id="contact-container">
+        
+            <div id="contact-form-container">
+                <form id="contact-form">
+                    <input id="input-name" name="name" type="text" placeholder="Your Name">
+                    <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                    <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                    <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div id="my-details-container">
+        
+                <h3> Get In touch </h3>
+                <p>Have any questions? We'ld love to hear from you . </p>
+        
+                <h3> My Address </h3>
+                <div class="my-details-info-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span> New Delhi, India</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>9891192816</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="far fa-envelope"></i>
+                    <span>rajanjha2508@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center social-icons">
+        
+            <ul class="horizontal-list">
+        
+                <li>
+                    <a href="https://www.linkedin.com/in/rajan2225/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="https://github.com/Rajankj" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="https://www.instagram.com/rajanjha2508/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="" target="_blank">
+                        <i class="fab fa-quora"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        </section>
+
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px"){
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px"
+                }
+            }
+        </script>
+
+    
+
+        
+    </body>
+    </html>
